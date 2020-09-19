@@ -5,15 +5,15 @@ export default ({ comments }) => {
     let content;
 
     if (comment.status === 'approved') {
-      content = comment.content
+      content = comment.content;
     }
 
     if (comment.status === 'pending') {
-      content = "This comment is awaiting moderation";
+      content = 'This comment is awaiting moderation';
     }
 
     if (comment.status === 'rejected') {
-      content = 'This comment has been removed';
+      content = 'This comment has been rejected';
     }
 
     return <li key={comment.id}>{content}</li>;
