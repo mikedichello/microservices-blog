@@ -15,7 +15,6 @@ spec:
       containers:
         - name: client
           image: mikedichello/client
-          imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
